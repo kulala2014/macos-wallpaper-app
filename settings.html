@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-ng-app="wallpaperApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Wallpaper Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body ng-cloak data-ng-controller="settingsCtrl" class="settings">
+
+    <div class="container">
+
+      <form>
+        <div class="form-group">
+          <label for="refreshTime">Refresh every:</label>
+          <select class="form-control" id="refreshTime" ng-model="refreshTime">
+            <option value="1" selected>Hour</option>
+            <option value="24">Day</option>
+            <option value="168">Week</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <div class="select">
+            <label for="source" class="control-label">Categories:</label>
+            <select multiple class="form-control" ng-model="selectedCategories" ng-options="category for category in categories">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 ">
+            <button ng-click="cancel()" class="btn btn-secondary btn-block">
+              Cancel
+            </button>
+          </div>
+
+          <div class="col-xs-6 ">
+            <button ng-click="save()" class="btn btn-primary btn-block" ng-disabled="loading == true">
+              Save
+              <i class='fa fa-circle-o-notch fa-spin' ng-show="loading"></i>
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-electron/angular-electron.min.js"></script>
+    <script src="js/controllers/settings.js"></script>
+    <script src="js/services/wallpaper.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-ng-app="wallpaperApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Wallpaper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body ng-cloak data-ng-controller="homeCtrl">
+
+    <ul class="dropdown">
+      <li ng-click="loading || getWallpaper()" ng-class="{disabled: loading}">
+        Refresh
+        <i class='fa fa-circle-o-notch fa-spin' ng-show="loading"></i>
+      </li>
+      <li ng-click="openSettings()">Settings</li>
+      <li ng-click="quit()">Quit</li>
+    </ul>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-electron/angular-electron.min.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/services/wallpaper.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+
+  </body>
+</html>
