@@ -1,5 +1,5 @@
 # Electron macOS wallpaper app
-Wallpaper is a simple macOS app that sits in your menubar and automatically refreshes your wallpaper. The app is built with Angular and Electron. The app allows you to automatically refresh your wallpaper every hour, day, or week. You can also choose wallpaper categories.
+Wallpaper is a simple macOS app built with AngularJS/Electron that sits in your menubar and automatically refreshes your wallpaper. The app is built with AngularJS/Electron. The app allows you to automatically refresh your wallpaper every hour, day, or week. You can also choose wallpaper categories.
 
 Wallpapers are from unsplash.com
 
