@@ -3,7 +3,7 @@ Wallpaper is a simple macOS app built with AngularJS/Electron that sits in your 
 
 Wallpapers are from unsplash.com
 
-If you wish to just install the app, the file is available for download [here](https://github.com/andypotts/macos-wallpaper-app/raw/build/Wallpaper.zip).
+If you wish to just install the app, the file is available for download [here](https://github.com/andypotts/macos-wallpaper-app/raw/build/Wallpaper.zip). *Please note, when I installed the app from this download link the app didn't work until I moved it into and ran it from the applications folder.*
 
 ## Sample wallpaper
 ![Sample wallpaper](https://raw.githubusercontent.com/andypotts/macos-wallpaper-app/master/sample.jpg)
@@ -13,4 +13,4 @@ If you wish to just install the app, the file is available for download [here](h
 - run `npm install`
 - run `npm run build` to make Wallpaper.app
 - run `npm start` to run app from CLI without building Wallpaper.app
-- If you wish to just install the app, the file is available for download [here](https://github.com/andypotts/macos-wallpaper-app/raw/build/Wallpaper.zip).
+- If you wish to just install the app, the file is available for download [here](https://github.com/andypotts/macos-wallpaper-app/raw/build/Wallpaper.zip). *Please note, when I installed the app from this download link the app didn't work until I moved it into and ran it from the applications folder.*
