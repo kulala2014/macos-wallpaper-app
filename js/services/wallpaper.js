@@ -13,8 +13,9 @@ app.service('wallpaperService', function ($timeout, $q) {
     var categories = JSON.parse(localStorage.getItem('selectedCategories'));
     var random = Math.floor(Math.random() * categories.length);
     var mainScreen = electron.screen.getPrimaryDisplay();
-    var h = (mainScreen.size.height * 2);
-    var w = (mainScreen.size.width * 2);
+    var scale = mainScreen.scaleFactor;
+    var h = (mainScreen.size.height * scale);
+    var w = (mainScreen.size.width * scale);
     var filePath = new Date().toLocaleString();
     filePath = filePath.replace(/\D/g,'');
     filePath = __dirname+'/img/wallpapers/'+filePath+'.jpg';
